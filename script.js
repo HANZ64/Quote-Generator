@@ -22,7 +22,7 @@ function removeLoadingSpinner() {
 // Show New Quote
 function newQuote() {
   showLoadingSpinner();
-  // Pick a random quote from apiQuotes array 
+  // Pick a random quote from apiQuotes array
   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
 
   // Check if the Author field is blank and replace it with 'Unknown'
@@ -31,7 +31,7 @@ function newQuote() {
   } else {
       authorText.textContent = quote.author;
   }
-  // Check Quote length to determine styling 
+  // Check Quote length to determine styling
   if (quote.text.length > 50) {
       quoteText.classList.add('long-quote');
   } else {
