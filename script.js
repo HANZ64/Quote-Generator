@@ -20,7 +20,7 @@ function removeLoadingSpinner() {
 }
 
 // Show New Quote
-function newQuote(){
+function newQuote() {
   showLoadingSpinner();
   // Pick a random quote from apiQuotes array 
   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
@@ -38,7 +38,7 @@ function newQuote(){
       quoteText.classList.remove('long-quote');
   }
 
-  //Set Quote, Hide loader
+  // Set Quote, Hide loader
   quoteText.textContent = quote.text;
   removeLoadingSpinner();
 }
