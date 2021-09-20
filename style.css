@@ -5,6 +5,23 @@ html {
   box-sizing: border-box;
 }
 
+/* Remove highlight boxes */
+button,
+textarea,
+input,
+select,
+a,
+i,
+.button-container {
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ -webkit-tap-highlight-color: transparent;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+  user-select: none;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
