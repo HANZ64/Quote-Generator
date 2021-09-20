@@ -110,6 +110,11 @@ footer a {
   right: 0;
   bottom: 0;
   padding: 0.3rem 0.5rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 footer a:visited {
@@ -118,11 +123,19 @@ footer a:visited {
 
 /* Media Query: Tablet or Smaller */
 @media screen and (max-width: 1000px) {
+  html {
+    font-size: 70%;
+  }
   .quote-container {
     margin: auto 10px;
   }
 
   .quote-text {
     font-size: 2.5rem;
+  }
+
+  footer a {
+    bottom: auto;
+    top: 0;
   }
 }
